@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>[CSP-S 2021] 廊桥分配 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="[CSP-S 2021] 廊桥分配题目描述当一架飞机抵达机场时，可以停靠在航站楼旁的廊桥，也可以停靠在位于机场边缘的远机位。乘客一般更期待停靠在廊桥，因为这样省去了坐摆渡车前往航站楼的周折。然而，因为廊桥的数量有限，所以这样的愿望不总是能实现。 机场分为国内区和国际区，国内航班飞机只能停靠在国内区，国际航班飞机只能停靠在国际区。一部分廊桥属于国内区，其余的廊桥属于国际区。 L 市新建了一座机场，一">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[CSP-S 2021] 廊桥分配">
+<meta property="og:url" content="https://github.com/wyl123ly/wyl123ly.github.io.git/2023/10/04/[CSP-S%202021]%20%E5%BB%8A%E6%A1%A5%E5%88%86%E9%85%8D/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="[CSP-S 2021] 廊桥分配题目描述当一架飞机抵达机场时，可以停靠在航站楼旁的廊桥，也可以停靠在位于机场边缘的远机位。乘客一般更期待停靠在廊桥，因为这样省去了坐摆渡车前往航站楼的周折。然而，因为廊桥的数量有限，所以这样的愿望不总是能实现。 机场分为国内区和国际区，国内航班飞机只能停靠在国内区，国际航班飞机只能停靠在国际区。一部分廊桥属于国内区，其余的廊桥属于国际区。 L 市新建了一座机场，一">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/05jaghri.png">
+<meta property="article:published_time" content="2023-10-04T05:26:26.187Z">
+<meta property="article:modified_time" content="2023-09-28T10:25:10.068Z">
+<meta property="article:author" content="wuyanlin">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.luogu.com.cn/upload/image_hosting/05jaghri.png">
+  
+    <link rel="alternate" href="/wyl123ly/wyl123ly.github.io.git/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/wyl123ly/wyl123ly.github.io.git/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/wyl123ly/wyl123ly.github.io.git/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/wyl123ly/wyl123ly.github.io.git/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/wyl123ly/wyl123ly.github.io.git/" id="logo">Hexo</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/wyl123ly/wyl123ly.github.io.git/" id="subtitle">yyyyy原神&lt;&gt;启动</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/wyl123ly/wyl123ly.github.io.git/">Home</a>
+        
+          <a class="main-nav-link" href="/wyl123ly/wyl123ly.github.io.git/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/wyl123ly/wyl123ly.github.io.git/atom.xml" title="RSS 订阅"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="搜索"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://github.com/wyl123ly/wyl123ly.github.io.git"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-[CSP-S 2021] 廊桥分配" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/wyl123ly/wyl123ly.github.io.git/2023/10/04/%5BCSP-S%202021%5D%20%E5%BB%8A%E6%A1%A5%E5%88%86%E9%85%8D/" class="article-date">
+  <time class="dt-published" datetime="2023-10-04T05:26:26.187Z" itemprop="datePublished">2023-10-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      [CSP-S 2021] 廊桥分配
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="CSP-S-2021-廊桥分配"><a href="#CSP-S-2021-廊桥分配" class="headerlink" title="[CSP-S 2021] 廊桥分配"></a>[CSP-S 2021] 廊桥分配</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>当一架飞机抵达机场时，可以停靠在航站楼旁的廊桥，也可以停靠在位于机场边缘的远机位。乘客一般更期待停靠在廊桥，因为这样省去了坐摆渡车前往航站楼的周折。然而，因为廊桥的数量有限，所以这样的愿望不总是能实现。</p>
+<p>机场分为国内区和国际区，国内航班飞机只能停靠在国内区，国际航班飞机只能停靠在国际区。一部分廊桥属于国内区，其余的廊桥属于国际区。</p>
+<p>L 市新建了一座机场，一共有 $n$ 个廊桥。该机场决定，廊桥的使用遵循“先到先得”的原则，即每架飞机抵达后，如果相应的区（国内&#x2F;国际）还有空闲的廊桥，就停靠在廊桥，否则停靠在远机位（假设远机位的数量充足）。该机场只有一条跑道，因此不存在两架飞机同时抵达的情况。</p>
+<p>现给定未来一段时间飞机的抵达、离开时刻，请你负责将 $n$ 个廊桥分配给国内区和国际区，使停靠廊桥的飞机数量最多。</p>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>输入的第一行，包含三个正整数 $n, m_1, m_2$，分别表示廊桥的个数、国内航班飞机的数量、国际航班飞机的数量。</p>
+<p>接下来 $m_1$ 行，是国内航班的信息，第 $i$ 行包含两个正整数 $a_{1, i}, b_{1, i}$，分别表示一架国内航班飞机的抵达、离开时刻。</p>
+<p>接下来 $m_2$ 行，是国际航班的信息，第 $i$ 行包含两个正整数 $a_{2, i}, b_{2, i}$，分别表示一架国际航班飞机的抵达、离开时刻。</p>
+<p>每行的多个整数由空格分隔。</p>
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>输出一个正整数，表示能够停靠廊桥的飞机数量的最大值。</p>
+<h2 id="样例-1"><a href="#样例-1" class="headerlink" title="样例 #1"></a>样例 #1</h2><h3 id="样例输入-1"><a href="#样例输入-1" class="headerlink" title="样例输入 #1"></a>样例输入 #1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">3 5 4</span><br><span class="line">1 5</span><br><span class="line">3 8</span><br><span class="line">6 10</span><br><span class="line">9 14</span><br><span class="line">13 18</span><br><span class="line">2 11</span><br><span class="line">4 15</span><br><span class="line">7 17</span><br><span class="line">12 16</span><br></pre></td></tr></table></figure>
+
+<h3 id="样例输出-1"><a href="#样例输出-1" class="headerlink" title="样例输出 #1"></a>样例输出 #1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">7</span><br></pre></td></tr></table></figure>
+
+<h2 id="样例-2"><a href="#样例-2" class="headerlink" title="样例 #2"></a>样例 #2</h2><h3 id="样例输入-2"><a href="#样例输入-2" class="headerlink" title="样例输入 #2"></a>样例输入 #2</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">2 4 6</span><br><span class="line">20 30</span><br><span class="line">40 50</span><br><span class="line">21 22</span><br><span class="line">41 42</span><br><span class="line">1 19</span><br><span class="line">2 18</span><br><span class="line">3 4</span><br><span class="line">5 6</span><br><span class="line">7 8</span><br><span class="line">9 10</span><br></pre></td></tr></table></figure>
+
+<h3 id="样例输出-2"><a href="#样例输出-2" class="headerlink" title="样例输出 #2"></a>样例输出 #2</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">4</span><br></pre></td></tr></table></figure>
+
+<h2 id="样例-3"><a href="#样例-3" class="headerlink" title="样例 #3"></a>样例 #3</h2><h3 id="样例输入-3"><a href="#样例输入-3" class="headerlink" title="样例输入 #3"></a>样例输入 #3</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">见附件中的 airport/airport3.in</span><br></pre></td></tr></table></figure>
+
+<h3 id="样例输出-3"><a href="#样例输出-3" class="headerlink" title="样例输出 #3"></a>样例输出 #3</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">见附件中的 airport/airport3.ans</span><br></pre></td></tr></table></figure>
+
+<h2 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h2><p><strong>【样例解释 #1】</strong></p>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/05jaghri.png"></p>
+<p>在图中，我们用抵达、离开时刻的数对来代表一架飞机，如 $(1, 5)$ 表示时刻 $1$ 抵达、时刻 $5$ 离开的飞机；用 $\surd$ 表示该飞机停靠在廊桥，用 $\times$ 表示该飞机停靠在远机位。</p>
+<p>我们以表格中阴影部分的计算方式为例，说明该表的含义。在这一部分中，国际区有 $2$ 个廊桥，$4$ 架国际航班飞机依如下次序抵达：</p>
+<ol>
+<li>首先 $(2, 11)$ 在时刻 $2$ 抵达，停靠在廊桥。</li>
+<li>然后 $(4, 15)$ 在时刻 $4$ 抵达，停靠在另一个廊桥。</li>
+<li>接着 $(7, 17)$ 在时刻 $7$ 抵达，这时前 $2$ 架飞机都还没离开、都还占用着廊桥，而国际区只有 $2$ 个廊桥，所以只能停靠远机位。</li>
+<li>最后 $(12, 16)$ 在时刻 $12$ 抵达，这时 $(2, 11)$ 这架飞机已经离开，所以有 $1$ 个空闲的廊桥，该飞机可以停靠在廊桥。</li>
+</ol>
+<p>根据表格中的计算结果，当国内区分配 $2$ 个廊桥、国际区分配 $1$ 个廊桥时，停靠廊桥的飞机数量最多，一共 $7$ 架。</p>
+<p><strong>【样例解释 #2】</strong></p>
+<p>当国内区分配 $2$ 个廊桥、国际区分配 $0$ 个廊桥时，停靠廊桥的飞机数量最多，一共 $4$ 架，即所有的国内航班飞机都能停靠在廊桥。</p>
+<p>需要注意的是，本题中廊桥的使用遵循“先到先得”的原则，如果国际区只有 $1$ 个廊桥，那么将被飞机 $(1, 19)$ 占用，而不会被 $(3, 4)$、$(5, 6)$、$(7, 8)$、$(9, 10)$ 这 $4$ 架飞机先后使用。</p>
+<p><strong>【数据范围】</strong></p>
+<p>对于 $20 %$ 的数据，$n \le 100$，$m_1 + m_2 \le 100$。<br>对于 $40 %$ 的数据，$n \le 5000$，$m_1 + m_2 \le 5000$。<br>对于 $100 %$ 的数据，$1 \le n \le {10}^5$，$m_1, m_2 \ge 1$，$m_1 + m_2 \le {10}^5$，所有 $a_{1, i}, b_{1, i}, a_{2, i}, b_{2, i}$ 为数值不超过 ${10}^8$ 的互不相同的正整数，且保证对于每个 $i \in [1, m_1]$，都有 $a_{1, i} &lt; b_{1, i}$，以及对于每个 $i \in [1, m_2]$，都有 $a_{2, i} &lt; b_{2, i}$。</p>
+<p>【感谢 hack 数据提供】</p>
+<ul>
+<li><a href="/user/393378">xingxuxin</a>。</li>
+<li><a href="/user/126765">cyslngsul</a>。</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/wyl123ly/wyl123ly.github.io.git/2023/10/04/[CSP-S%202021]%20%E5%BB%8A%E6%A1%A5%E5%88%86%E9%85%8D/" data-id="clnbbbd0d000150cn0xvphnel" data-title="[CSP-S 2021] 廊桥分配" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/wyl123ly/wyl123ly.github.io.git/2023/10/04/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/wyl123ly/wyl123ly.github.io.git/archives/2023/10/">十月 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/wyl123ly/wyl123ly.github.io.git/archives/2023/09/">九月 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/wyl123ly/wyl123ly.github.io.git/2023/10/04/%5BCSP-S%202021%5D%20%E5%BB%8A%E6%A1%A5%E5%88%86%E9%85%8D/">[CSP-S 2021] 廊桥分配</a>
+          </li>
+        
+          <li>
+            <a href="/wyl123ly/wyl123ly.github.io.git/2023/10/04/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/wyl123ly/wyl123ly.github.io.git/2023/09/28/p4801%E9%A2%98%E8%A7%A3/">p4801题解</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 wuyanlin<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/wyl123ly/wyl123ly.github.io.git/" class="mobile-nav-link">Home</a>
+  
+    <a href="/wyl123ly/wyl123ly.github.io.git/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/wyl123ly/wyl123ly.github.io.git/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/wyl123ly/wyl123ly.github.io.git/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/wyl123ly/wyl123ly.github.io.git/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
